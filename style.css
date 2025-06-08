@@ -268,7 +268,7 @@ button {
 }
 
 .canva_section .canva_sectionHeader span {
-  width: 85vw;
+  width: 80vw;
   opacity: 70%;
   font-size: var(--text-small);
   text-align: center;
@@ -277,6 +277,7 @@ button {
 .canva_section .canva_sectionNavBar {
   display: flex;
   width: 80vw;
+  gap: 2rem;
   margin-top: var(--margin-over);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   z-index: var(--z-over);
