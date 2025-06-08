@@ -1,0 +1,144 @@
+/* Converted SCSS-style nesting to plain CSS */
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  max-width: 100vw;
+  font-size: 14px;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 9vw, 14rem);
+}
+
+h2 {
+  font-size: clamp(3rem, 9vw, 8rem);
+}
+
+h3 {
+  font-size: clamp(1.6rem, 9vw, 6rem);
+  font-weight: 500;
+}
+
+p {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-weight: 400;
+}
+
+a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 500;
+}
+
+:root {
+  --middle: center;
+  --h-full: 100svh;
+  --w-full: 100vw;
+  --z-overfull: 100;
+  --z-over: 30;
+  --z-middle: 15;
+  --z-under: 0;
+  --radius-circle: 50rem;
+  --radius-main: 32px;
+  --text-small: 1.3rem;
+  --margin-small: 1.6rem;
+  --margin-default: 2.4rem;
+  --margin-over: 4.4rem;
+}
+
+.position_middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 6rem;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  background-color: rgba(255, 255, 255, 0.01);
+  z-index: var(--z-overfull);
+}
+
+.hero_header .hero_headerJumpLink {
+  display: none;
+  gap: 4.4rem;
+}
+
+.hero_header .hero_headerOptions {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 2rem;
+  gap: 4px;
+}
+
+.hero_header .radio_point {
+  height: 5px;
+  width: 5px;
+  border-radius: var(--radius-circle);
+  background-color: #fff;
+}
+
+.hero_header:hover .radio_point {
+  filter: blur(0px) !important;
+}
+
+.hero_buttonSection {
+  position: absolute;
+  width: 100%;
+  bottom: 10vh;
+  z-index: var(--z-over);
+}
+
+.hero_buttonSection .hero_buttonSectionBack {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  backdrop-filter: blur(15px);
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero_buttonSection .hero_buttonSectionBack button {
+  height: 39px;
+  padding: 0 3rem;
+  border-radius: var(--radius-circle);
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #252541;
+}
+
+.hero_buttonSection .hero_buttonSectionBack p {
+  padding: 0.6rem 0;
+}
