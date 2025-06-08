@@ -285,6 +285,7 @@ button {
 .canva_section .canva_sectionNavBar .canva_sectionNavBarLinks {
   display: flex;
   justify-content: flex-start;
+  font-size: clamp(1.6rem, 9vw, 6rem);
   gap: 2rem;
   overflow-x: auto;
 }
