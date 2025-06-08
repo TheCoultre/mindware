@@ -252,13 +252,13 @@ button {
 }
 
 .canva_section .canva_sectionHeader img {
-  width: 80vw;
+  width: 85vw;
   object-fit: contain;
   border-radius: 24px;
 }
 
 .canva_section .canva_sectionHeader button {
-  padding: 1.8rem 14vw;
+  padding: 1.4rem 14vw;
   backdrop-filter: blur(15px);
   border-radius: var(--radius-main);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -268,7 +268,7 @@ button {
 }
 
 .canva_section .canva_sectionHeader span {
-  width: 80vw;
+  width: 85vw;
   opacity: 70%;
   font-size: var(--text-small);
   text-align: center;
@@ -285,7 +285,7 @@ button {
 .canva_section .canva_sectionNavBar .canva_sectionNavBarLinks {
   display: flex;
   justify-content: flex-start;
-  font-size: clamp(1.6rem, 9vw, 6rem);
+  font-size: clamp(1.6rem, 6vw, 6rem);
   gap: 2rem;
   overflow-x: auto;
 }
