@@ -252,9 +252,9 @@ button {
 }
 
 .canva_section .canva_sectionHeader img {
-  width: 90vw;
+  width: 80vw;
   object-fit: contain;
-  border-radius: 28px;
+  border-radius: 24px;
 }
 
 .canva_section .canva_sectionHeader button {
