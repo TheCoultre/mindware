@@ -98,6 +98,62 @@
                     <span>Terms of Service</span>
                 </div>
             </section>
+              <section class="app_section position_middle">
+  <p>Find the necessary application on GitHub</p>
+
+  <!-- Swiper container -->
+  <div class="swiper custom-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide custom-slide" style="width: 80vw">
+        <div class="app_sectionContainer">
+          <h3>DeepFake</h3>
+          <p>Google I/O 2025. It represents a significant advancement ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide custom-slide" style="width: 80vw">
+        <div class="app_sectionContainer">
+          <h3>ChatGPT</h3>
+          <p>OpenAI 2025. The next generation of LLMs designed to ...</p>
+        </div>
+      </div>
+      <div class="swiper-slide custom-slide" style="width: 80vw">
+        <div class="app_sectionContainer">
+          <h3>Stable Diffusion 3</h3>
+          <p>A revolutionary model for photorealistic image generation...</p>
+        </div>
+      </div>
+      <div class="swiper-slide custom-slide" style="width: 80vw">
+        <div class="app_sectionContainer">
+          <h3>AlphaFold 3</h3>
+          <p>Protein folding meets AI: new advances in biology...</p>
+        </div>
+      </div>
+    </div>
+    <!-- Scrollbar (optional) -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <!-- Button -->
+  <button class="app_sectionButtonList position_middle">
+    <img src="menu-points.png" alt="Menu icon" />
+  </button>
+
+  <!-- SwiperJS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.custom-swiper', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      grabCursor: true,
+      initialSlide: 0,
+      spaceBetween: 15,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+      },
+    });
+  </script>
+</section>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
