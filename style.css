@@ -142,3 +142,154 @@ button {
 .hero_buttonSection .hero_buttonSectionBack p {
   padding: 0.6rem 0;
 }
+.hero_background {
+  position: relative;
+  height: 120svh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.hero_background .linear_gradient {
+  position: absolute;
+  bottom: 0;
+  min-height: 30svh;
+  width: var(--w-full);
+  background: linear-gradient(to bottom, transparent, black 100%, black 100%);
+  z-index: var(--z-over);
+}
+
+.hero_background .hero_backgroundVideo {
+  position: absolute;
+  height: 120svh;
+  width: var(--w-full);
+  object-fit: cover;
+  opacity: 90%;
+}
+
+.hero_background .hero_preview {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20svh;
+  text-transform: uppercase;
+  z-index: var(--z-over);
+}
+
+.hero_background .hero_preview p {
+  margin-top: 0.8rem;
+}
+
+.hero_background .hero_foother {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  width: 100%;
+  padding: 0 2rem;
+  bottom: 20svh;
+  z-index: var(--z-over);
+}
+
+.hero_background .hero_foother .hero_footherInfo {
+  opacity: 70%;
+}
+
+.hero_background .hero_foother .hero_footherTools {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.spacer-text_section {
+  display: flex;
+  flex-direction: column;
+  width: var(--w-full);
+  text-align: center;
+  padding: 10rem 0 4rem;
+  gap: var(--margin-default);
+  z-index: var(--z-over);
+}
+
+.spacer-text_section h2 {
+  width: var(--w-full);
+}
+
+.spacer-text_section span {
+  width: 80vw;
+  opacity: 80%;
+  font-size: var(--text-small);
+}
+.canva_section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  padding: 10rem 0;
+  overflow: hidden;
+}
+
+.canva_section .background_img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: var(--z-under);
+}
+
+.canva_section .canva_sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-default);
+  top: 10%;
+  width: 100%;
+  z-index: var(--z-middle);
+}
+
+.canva_section .canva_sectionHeader img {
+  width: 90vw;
+  object-fit: contain;
+  border-radius: 28px;
+}
+
+.canva_section .canva_sectionHeader button {
+  padding: 1.8rem 14vw;
+  backdrop-filter: blur(15px);
+  border-radius: var(--radius-main);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  z-index: var(--z-over);
+}
+
+.canva_section .canva_sectionHeader span {
+  width: 80vw;
+  opacity: 70%;
+  font-size: var(--text-small);
+  text-align: center;
+}
+
+.canva_section .canva_sectionNavBar {
+  display: flex;
+  width: 80vw;
+  margin-top: var(--margin-over);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: var(--z-over);
+}
+
+.canva_section .canva_sectionNavBar .canva_sectionNavBarLinks {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  overflow-x: auto;
+}
+
+.canva_section .canva_sectionNavBarLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  white-space: nowrap;
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-weight: 400;
+}
