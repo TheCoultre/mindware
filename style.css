@@ -293,3 +293,125 @@ button {
   font-size: clamp(1.2rem, 5vw, 2rem);
   font-weight: 400;
 }
+.custom-swiper {
+  width: 100vw;
+  overflow: visible;
+}
+
+.custom-slide {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+.app_section {
+  flex-direction: column;
+  width: var(--w-full);
+  gap: var(--margin-over);
+  text-align: center;
+  overflow-x: visible;
+}
+
+.app_section .app_sectionContainer {
+  height: 32rem;
+  padding: 3rem;
+  border-radius: 2rem;
+  gap: var(--margin-small);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app_section .app_sectionContainer img {
+  width: 8rem;
+}
+
+.app_section .app_sectionContainer h3 {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+}
+
+.app_section .app_sectionContainer p {
+  width: 100%;
+  max-width: 24rem;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  opacity: 0.3;
+  text-align: center;
+}
+
+.app_sectionButtonList {
+  height: 3.4rem;
+  width: 3.4rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.footer_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: var(--w-full);
+  gap: var(--margin-default);
+  padding: 1rem 2rem;
+  margin-top: 12rem;
+  opacity: 50%;
+}
+
+.footer_section .footer_sectionLinks {
+  gap: var(--margin-default);
+}
+@media only screen and (min-width: 768px) {
+  .hero_header .hero_headerJumpLink {
+    display: flex;
+  }
+
+  .hero_buttonSection .hero_buttonSectionBack {
+    flex-direction: row;
+  }
+
+  .hero_buttonSection .hero_buttonSectionBack p {
+    padding: 0 2rem;
+  }
+
+  .spacer-text_section h2 {
+    width: 60vw;
+  }
+
+  .spacer-text_section span {
+    width: 36vw;
+  }
+
+  .canva_section {
+    padding: 15rem 0;
+  }
+
+  .canva_section .canva_sectionHeader img {
+    margin-top: 1rem;
+    width: 60vw;
+  }
+
+  .canva_section .canva_sectionHeader span {
+    width: 40vw;
+  }
+
+  .canva_section .background_img {
+    object-fit: fill;
+  }
+
+  .canva_section .canva_sectionNavBarLinks {
+    gap: 8rem;
+    overflow-x: hidden;
+  }
+
+  .footer_section {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero_header .hero_headerJumpLink {
+    display: flex;
+  }
+}
