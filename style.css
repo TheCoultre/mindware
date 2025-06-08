@@ -113,6 +113,10 @@ button {
   filter: blur(0px) !important;
 }
 
+.radio_point.blur {
+  filter: blur(2px);
+}
+
 .hero_buttonSection {
   position: absolute;
   width: 100%;
