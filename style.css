@@ -414,4 +414,22 @@ button {
   .hero_header .hero_headerJumpLink {
     display: flex;
   }
+
+  .hero_background .hero_preview h1 {
+    font-size: clamp(3rem, 8vw, 10rem);
+    letter-spacing: 0.05em;
+  }
+
+  .hero_background .hero_preview p {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+
+  .app_section .app_sectionContainer {
+    padding: 4rem 6rem;
+  }
+
+  .footer_section {
+    justify-content: space-around;
+    padding: 2rem 4rem;
+  }
 }
