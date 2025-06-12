@@ -223,15 +223,14 @@ button {
   opacity: 80%;
   font-size: var(--text-small);
 }
-.canva_section {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  height: auto;
-  width: 100vw;
-  padding: 10rem 0;
-  overflow: hidden;
-}
+    .canva_section {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      width: 100vw;
+      padding: 12rem 0;
+      overflow: hidden;
+    }
 
 .canva_section .background_img {
   position: absolute;
