@@ -263,7 +263,7 @@ body {
 
 .switch_button {
   position: absolute;
-  left: 70vw;
+  left: 81vw;
   height: 15%;
   width: 2rem;
   border-radius: var(--radius-circle);
