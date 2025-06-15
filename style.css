@@ -207,8 +207,6 @@ button {
 
 
 .spacer-text_section {
-  display: flex;
-  felx-direction: column;
   padding: 8rem 0;
   z-index: var(--z-over);
 }
