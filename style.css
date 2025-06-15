@@ -252,7 +252,7 @@ body {
   position: relative;
   height: auto;
   width: 100vw;
-  padding: 8rem 0;
+  padding: 8rem 0 12rem;
   background-image: url("background-veo3.png");
   background-size: 300% 100%;
   background-position: center;
