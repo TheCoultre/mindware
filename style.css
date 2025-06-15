@@ -52,19 +52,20 @@ button {
 }
 
 :root {
-  --middle: center;
-  --h-full: 100svh;
-  --w-full: 100vw;
-  --z-overfull: 100;
-  --z-over: 30;
-  --z-middle: 15;
-  --z-under: 0;
-  --radius-circle: 50rem;
-  --radius-main: 32px;
-  --text-small: 1.3rem;
-  --margin-small: 1.6rem;
-  --margin-default: 2.4rem;
-  --margin-over: 4.4rem;
+    --middle: center;
+    --h-full: 100svh;
+    --w-full: 100vw;
+    --z-overfull: 100;
+    --z-over: 30;
+    --z-middle: 15;
+    --z-under: 0;
+    --radius-circle: 50rem;
+    --radius-before-main: 2.8rem;
+    --radius-after-main: 4rem;
+    --text-small: 1.3rem;
+    --margin-small: 1.6rem;
+    --margin-default: 2.4rem;
+    --margin-over: 4.4rem;
 }
 
 .position_middle {
