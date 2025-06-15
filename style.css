@@ -225,77 +225,109 @@ button {
   font-size: var(--text-small);
 }
 
+:root {
+  --radius-before-main: 32px;
+  --radius-circle: 9999px;
+  --z-over: 10;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.position_middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .canva_section {
-    height: auto;
-    width: 100vw;
-    padding: 8rem 0;
-    gap: 0.6rem;
-    background-image: url("background-veo3.png");
-    background-size: 300% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+  position: relative;
+  height: auto;
+  width: 100vw;
+  padding: 8rem 0;
+  background-image: url("/background-veo3.png");
+  background-size: 300% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .canva_section img {
-    position: absolute;
-    width: 90vw;
-    border-radius: var(--radius-before-main);
+  position: absolute;
+  width: 90vw;
+  border-radius: var(--radius-before-main);
 }
 
-.canva_section .switch_button {
-    position: absolute;
-    margin-left: 70vw;
-    height: 15%;
-    width: 2rem;
-    border-radius: var(--radius-circle);
-    backdrop-filter: blur(1rem);
-    background-color: rgba(255, 255, 255, 0.40);
-    z-index: var(--z-over);
+.switch_button {
+  position: absolute;
+  left: 70vw;
+  height: 15%;
+  width: 2rem;
+  border-radius: var(--radius-circle);
+  backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.40);
+  z-index: var(--z-over);
 }
 
-.canva_section .canva_sectionContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.canva_sectionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  gap: 0.6rem;
+  padding: 0.3rem;
+  backdrop-filter: blur(45px);
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.canva_section .canva_sectionContainer .canva_sectionTable {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    width: 70vw;
-    padding: 2rem 3.6rem;
-    text-align: center;
-    border-radius: var(--radius-before-main);
-    backdrop-filter: blur(2rem);
-    background-color: rgba(0, 0, 0, 0.35);
+.canva_sectionTable {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 100%;
+  padding: 2rem 3.6rem;
+  text-align: center;
+  border-radius: var(--radius-before-main);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-.canva_section .canva_sectionContainer .canva_sectionTable p {
-    color: #b9b9b9;
+.canva_sectionTable p {
+  color: #b9b9b9;
 }
 
-.canva_section .canva_sectionContainer .canva_sectionTable button {
-    margin-top: 1rem;
-    border: none;
-    padding: 1rem 3rem;
-    border-radius: var(--radius-circle);
-    background-color: #fff;
+.canva_sectionTable button {
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: var(--radius-circle);
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
 }
 
-.canva_section .canva_sectionContainer .canva_sectionNavbar {
-    width: 70vw;
-    border-radius: var(--radius-circle);
-    backdrop-filter: blur(2rem);
-    background-color: rgba(0, 0, 0, 0.2);
+.canva_sectionNavbar {
+  width: 100%;
+  border-radius: var(--radius-circle);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-.canva_section .canva_sectionContainer .canva_sectionNavbar .canva_sectionNavbarLinks {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 1.6rem 2rem;
+.canva_sectionNavbarLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1.6rem 2rem;
 }
+
+.canva_sectionNavbarLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 
 .custom-swiper {
