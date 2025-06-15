@@ -343,7 +343,7 @@ body {
 .app_section {
   flex-direction: column;
   width: var(--w-full);
-  gap: var(--margin-over);
+  gap: var(--margin-default);
   text-align: center;
   overflow-x: visible;
 }
