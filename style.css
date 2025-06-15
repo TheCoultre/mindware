@@ -205,23 +205,27 @@ button {
   gap: 2rem;
 }
 
+
 .spacer-text_section {
-  display: flex;
-  flex-direction: column;
-  width: var(--w-full);
-  text-align: center;
-  padding: 10rem 0 4rem;
-  gap: var(--margin-default);
+  padding: 8rem 0;
   z-index: var(--z-over);
 }
 
-.spacer-text_section h2 {
+.spacer-text_sectionLayerBlur {
+  width: var(--w-full);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--margin-default);
+}
+
+.spacer-text_sectionLayerBlur h3 {
   width: var(--w-full);
 }
 
-.spacer-text_section span {
-  width: 80vw;
-  opacity: 80%;
+.spacer-text_sectionLayerBlur span {
+  width: 70vw;
+  opacity: 0.8;
   font-size: var(--text-small);
 }
 
