@@ -223,82 +223,80 @@ button {
   opacity: 80%;
   font-size: var(--text-small);
 }
-    .canva_section {
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      width: 100vw;
-      padding: 12rem 0;
-      overflow: hidden;
-    }
 
-.canva_section .background_img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: var(--z-under);
+.canva_section {
+    height: auto;
+    width: 100vw;
+    padding: 8rem 0;
+    gap: 0.6rem;
+    background-image: url("/background-veo3.png");
+    background-size: 300% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.canva_section .canva_sectionHeader {
-  display: flex;
-  flex-direction: column;
-  gap: var(--margin-default);
-  top: 10%;
-  width: 100%;
-  z-index: var(--z-middle);
+.canva_section img {
+    position: absolute;
+    width: 90vw;
+    border-radius: var(--radius-before-main);
 }
 
-.canva_section .canva_sectionHeader img {
-  width: 85vw;
-  object-fit: contain;
-  border-radius: 24px;
+.canva_section .switch_button {
+    position: absolute;
+    margin-left: 70vw;
+    height: 15%;
+    width: 2rem;
+    border-radius: var(--radius-circle);
+    backdrop-filter: blur(1rem);
+    background-color: rgba(255, 255, 255, 0.40);
+    z-index: var(--z-over);
 }
 
-.canva_section .canva_sectionHeader button {
-  padding: 1.4rem 14vw;
-  backdrop-filter: blur(15px);
-  border-radius: var(--radius-main);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  z-index: var(--z-over);
+.canva_section .canva_sectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.canva_section .canva_sectionHeader span {
-  width: 80vw;
-  opacity: 70%;
-  font-size: var(--text-small);
-  text-align: center;
+.canva_section .canva_sectionContainer .canva_sectionTable {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    width: 70vw;
+    padding: 2rem 3.6rem;
+    text-align: center;
+    border-radius: var(--radius-before-main);
+    backdrop-filter: blur(2rem);
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
-.canva_section .canva_sectionNavBar {
-  display: flex;
-  width: 80vw;
-  gap: 2rem;
-  margin-top: var(--margin-over);
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  z-index: var(--z-over);
+.canva_section .canva_sectionContainer .canva_sectionTable p {
+    color: #b9b9b9;
 }
 
-.canva_section .canva_sectionNavBar .canva_sectionNavBarLinks {
-  display: flex;
-  justify-content: flex-start;
-  font-size: clamp(1.6rem, 6vw, 6rem);
-  gap: 2rem;
-  overflow-x: auto;
+.canva_section .canva_sectionContainer .canva_sectionTable button {
+    margin-top: 1rem;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: var(--radius-circle);
+    background-color: #fff;
 }
 
-.canva_section .canva_sectionNavBarLinks a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 6rem;
-  white-space: nowrap;
-  font-size: clamp(1.2rem, 5vw, 2rem);
-  font-weight: 400;
+.canva_section .canva_sectionContainer .canva_sectionNavbar {
+    width: 70vw;
+    border-radius: var(--radius-circle);
+    backdrop-filter: blur(2rem);
+    background-color: rgba(0, 0, 0, 0.2);
 }
+
+.canva_section .canva_sectionContainer .canva_sectionNavbar .canva_sectionNavbarLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1.6rem 2rem;
+}
+
+
 .custom-swiper {
   width: 100vw;
   overflow: visible;
